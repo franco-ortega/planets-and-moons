@@ -5,6 +5,22 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+
+  background: linear-gradient(
+    180deg,
+    hsl(240, 100%, 50%),
+    hsl(240, 75%, 50%),
+    hsl(240, 50%, 50%),
+    hsl(240, 25%, 50%),
+    hsl(300, 100%, 25%),
+    hsl(300, 75%, 25%),
+    hsl(300, 50%, 25%),
+    hsl(300, 25%, 25%),
+    hsl(0, 0%, 25%),
+    hsl(0, 0%, 20%),
+    hsl(0, 0%, 15%),
+    hsl(0, 0%, 10%)
+  );
 }
 
 .description a {
