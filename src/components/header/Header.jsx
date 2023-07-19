@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header>
-      <h1>Header</h1>
+      <h1>Hello Universe</h1>
       <nav>
         <ul>
           <li>Home</li>
