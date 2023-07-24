@@ -1,9 +1,9 @@
 import styles from './page.module.css';
 
-export default function Home() {
+export default function page() {
   return (
     <main className={styles.main}>
-      <h2>Welcome</h2>
+      <h2>Moons</h2>
     </main>
   );
 }
