@@ -1,0 +1,10 @@
+.PlanetLink {
+  background-color: hsl(0, 0%, 60%);
+  color: hsl(179, 86%, 62%);
+  font-size: 1.5rem;
+  width: 10rem;
+  aspect-ratio: 1/1;
+  border-radius: 90vh;
+  border: 0;
+  box-shadow: 0 0 2rem 1rem hsl(50, 80%, 50%);
+}
