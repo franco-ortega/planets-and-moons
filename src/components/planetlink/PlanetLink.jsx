@@ -3,8 +3,8 @@ import styles from './PlanetLink.module.css';
 
 export default function PlanetLink({ path, title }) {
   return (
-    <button className={styles.PlanetLink}>
-      <Link href={`/planets/${path}`}>{title}</Link>
-    </button>
+    <Link href={`/planets/${path}`}>
+      <button className={styles.PlanetLink}>{title}</button>
+    </Link>
   );
 }

@@ -7,4 +7,6 @@
   border-radius: 90vh;
   border: 0;
   box-shadow: 0 0 2rem 1rem hsl(50, 80%, 50%);
+
+  cursor: pointer;
 }
