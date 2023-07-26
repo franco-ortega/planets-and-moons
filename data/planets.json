@@ -1,0 +1,42 @@
+[
+  { "id": "1",
+    "path": "mercury",
+    "title": "Mercury",
+    "info": "This planet is hot."
+  },
+  { "id": "2",
+    "path": "venus",
+    "title": "Venus",
+    "info": "This planet is stormy."
+  },
+  { "id": "3",
+    "path": "earth",
+    "title": "Earth",
+    "info": "This planet is alive."
+  },
+  { "id": "4",
+    "path": "mars",
+    "title": "Mars",
+    "info": "This planet is red."
+  },
+  { "id": "5",
+    "path": "jupiter",
+    "title": "Jupiter",
+    "info": "This planet is gassy."
+  },
+  { "id": "6",
+    "path": "saturn",
+    "title": "Saturn",
+    "info": "This planet is engaged."
+  },
+  { "id": "7",
+    "path": "uranus",
+    "title": "Uranus",
+    "info": "This planet is far."
+  },
+  { "id": "8",
+    "path": "neptune",
+    "title": "Neptune",
+    "info": "This planet is farther."
+  }
+]

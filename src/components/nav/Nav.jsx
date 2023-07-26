@@ -2,7 +2,6 @@ import navlinks from '../../../data/navlinks';
 import NavLink from '../navlink/NavLink';
 
 export default function Nav() {
-  console.log('NAVLINKS', navlinks);
   return (
     <nav>
       <ul>
