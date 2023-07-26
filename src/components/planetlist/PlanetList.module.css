@@ -1,0 +1,10 @@
+.PlanetList {
+  margin-top: 5rem;
+  max-width: min(50rem, 80%);
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
