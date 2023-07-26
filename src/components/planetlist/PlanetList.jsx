@@ -7,7 +7,7 @@ export default function PlanetList() {
     <ul className={styles.PlanetList}>
       {planetData.map((planet) => (
         <li key={planet.title}>
-          <PlanetLink title={planet.title} />
+          <PlanetLink path={planet.path} title={planet.title} />
         </li>
       ))}
     </ul>
