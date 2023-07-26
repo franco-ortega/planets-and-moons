@@ -18,13 +18,3 @@
     hsl(120, 25%, 25%)
   );
 }
-
-.main li {
-  list-style-type: none;
-  list-style: none;
-  background-color: red;
-}
-
-.main li + li {
-  margin-top: 0.5rem;
-}
