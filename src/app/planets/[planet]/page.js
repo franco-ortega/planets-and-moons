@@ -1,7 +1,7 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import planetData from '../../../data/planets';
+import planetData from '../../../../data/planets';
 
 export default function Planet() {
   const params = useParams();
