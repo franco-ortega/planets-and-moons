@@ -12,6 +12,11 @@ export default function Planet() {
     <div>
       <p>This is planet {planet.title}.</p>
       <p>Info: {planet.info}</p>
+      <ul>
+        {planet.moons.map((moon) => (
+          <li key={planet.title + moon}>{moon}</li>
+        ))}
+      </ul>
     </div>
   );
 }

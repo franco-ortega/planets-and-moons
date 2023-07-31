@@ -5,9 +5,7 @@ export default function Planet({ moons, title }) {
     <div>
       <p>The moons of {title}:</p>
       <ul>
-        {moons.map((moon) => (
-          <li key={title + moon}>{moon}</li>
-        ))}
+        <li>Coming Soon</li>
       </ul>
     </div>
   );
