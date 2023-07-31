@@ -2,6 +2,7 @@
 
 import { useParams } from 'next/navigation';
 import planetData from '../../../../data/planets';
+import Link from 'next/link';
 
 export default function Planet() {
   const params = useParams();
@@ -14,7 +15,9 @@ export default function Planet() {
       <p>Info: {planet.info}</p>
       <ul>
         {planet.moons.map((moon) => (
-          <li key={planet.title + moon}>{moon}</li>
+          <li key={planet.title + moon}>
+            <Link href={`${planet.path}/${moon}`}>{moon}</Link>
+          </li>
         ))}
       </ul>
     </div>

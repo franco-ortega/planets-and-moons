@@ -1,6 +1,6 @@
 'use client';
 
-export default function Planet({ moons, title }) {
+export default function Moon({ title }) {
   return (
     <div>
       <p>The moons of {title}:</p>
