@@ -13,9 +13,11 @@ export default function MoonPage() {
 
   const moon = moons.find((moon) => moon === params.moon);
 
+  const moonTitle = moon.slice(0, 1).toUpperCase() + moon.slice(1);
+
   return (
     <main>
-      <Moon title={planet.title} moon={moon} />
+      <Moon title={planet.title} moon={moonTitle} />
     </main>
   );
 }
