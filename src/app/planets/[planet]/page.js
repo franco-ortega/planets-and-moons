@@ -8,7 +8,9 @@ import convertTitleForPath from '@/utils/convertTitleForPath';
 export default function Planet() {
   const params = useParams();
 
-  const planet = planetData.find((planet) => planet.path === params.planet);
+  const planet = planetData.find(
+    (planet) => convertTitleForPath(planet.title) === params.planet
+  );
   const planetPath = convertTitleForPath(planet.title);
 
   return (
