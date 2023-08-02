@@ -1,8 +1,8 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import planetData from '../../../../data/planets';
 import Link from 'next/link';
+import planetData from '../../../../data/planets';
 import convertTitleForPath from '@/utils/convertTitleForPath';
 
 export default function Planet() {

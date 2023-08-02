@@ -1,7 +1,7 @@
 'use client';
 
-import planetData from '../../../../../../data/planets';
 import { useParams } from 'next/navigation';
+import planetData from '../../../../../../data/planets';
 import Moon from '@/components/moon/Moon';
 
 export default function MoonPage() {
