@@ -6,12 +6,9 @@ import styles from './PlanetList.module.css';
 export default function PlanetList() {
   return (
     <ul className={styles.PlanetList}>
-      {planetData.map((planet) => (
-        <li key={planet.id}>
-          <PlanetLink
-            path={convertTitleForPath(planet.title)}
-            title={planet.title}
-          />
+      {planetData.map(({ id, title }) => (
+        <li key={id}>
+          <PlanetLink path={convertTitleForPath(title)} title={title} />
         </li>
       ))}
     </ul>
