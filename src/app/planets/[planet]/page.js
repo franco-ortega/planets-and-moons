@@ -3,11 +3,13 @@
 import { useParams } from 'next/navigation';
 import planetData from '../../../../data/planets';
 import Link from 'next/link';
+import convertTitleForPath from '@/utils/convertTitleForPath';
 
 export default function Planet() {
   const params = useParams();
 
   const planet = planetData.find((planet) => planet.path === params.planet);
+  const planetPath = convertTitleForPath(planet.title);
 
   return (
     <div>
@@ -17,10 +19,10 @@ export default function Planet() {
         {planet.moons.length === 0 ? (
           <p>This planet has no moons.</p>
         ) : (
-          planet.moons.map((moon) => (
-            <li key={moon.id}>
-              <Link href={`${planet.path}/moons/${moon.path}`}>
-                {moon.title}
+          planet.moons.map(({ id, title }) => (
+            <li key={id}>
+              <Link href={`${planetPath}/moons/${convertTitleForPath(title)}`}>
+                {title}
               </Link>
             </li>
           ))
