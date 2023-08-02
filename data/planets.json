@@ -1,42 +1,45 @@
 [
   { "id": "1",
-    "path": "mercury",
     "title": "Mercury",
-    "info": "This planet is hot."
+    "info": "This planet is hot.",
+    "moons": []
   },
   { "id": "2",
-    "path": "venus",
     "title": "Venus",
-    "info": "This planet is stormy."
+    "info": "This planet is stormy.",
+    "moons": []
   },
   { "id": "3",
-    "path": "earth",
     "title": "Earth",
-    "info": "This planet is alive."
+    "info": "This planet is alive.",
+    "moons": [{"id": "31",  "title": "Luna"}]
   },
   { "id": "4",
-    "path": "mars",
     "title": "Mars",
-    "info": "This planet is red."
+    "info": "This planet is red.",
+    "moons": [
+      {"id": "41",  "title": "Phobos"},
+      {"id": "42",  "title": "Deimos"}
+    ]
   },
   { "id": "5",
-    "path": "jupiter",
     "title": "Jupiter",
-    "info": "This planet is gassy."
+    "info": "This planet is gassy.",
+    "moons": []
   },
   { "id": "6",
-    "path": "saturn",
     "title": "Saturn",
-    "info": "This planet is engaged."
+    "info": "This planet is engaged.",
+    "moons": []
   },
   { "id": "7",
-    "path": "uranus",
     "title": "Uranus",
-    "info": "This planet is far."
+    "info": "This planet is far.",
+    "moons": []
   },
   { "id": "8",
-    "path": "neptune",
     "title": "Neptune",
-    "info": "This planet is farther."
+    "info": "This planet is farther.",
+    "moons": []
   }
 ]
