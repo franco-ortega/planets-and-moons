@@ -6,8 +6,8 @@ export default function PlanetList() {
   return (
     <ul className={styles.PlanetList}>
       {planetData.map((planet) => (
-        <li key={planet.title}>
-          <PlanetLink path={planet.path} title={planet.title} />
+        <li key={planet.id}>
+          <PlanetLink path={planet.title.toLowerCase()} title={planet.title} />
         </li>
       ))}
     </ul>
