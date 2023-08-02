@@ -29,7 +29,8 @@
   { "id": "5",
     "path": "jupiter",
     "title": "Jupiter",
-    "info": "This planet is gassy."
+    "info": "This planet is gassy.",
+    "moons": []
     
   },
   { "id": "6",
