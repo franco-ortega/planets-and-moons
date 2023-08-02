@@ -9,8 +9,6 @@ export default function Planet() {
 
   const planet = planetData.find((planet) => planet.path === params.planet);
 
-  console.log(planet.moons);
-
   return (
     <div>
       <p>This is planet {planet.title}.</p>
