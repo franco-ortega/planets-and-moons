@@ -4,6 +4,7 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import planetData from '../../../../data/planets';
 import convertTitleForPath from '@/utils/convertTitleForPath';
+import MoonLink from '@/components/moonlink/MoonLink';
 
 export default function Planet() {
   const params = useParams();
@@ -22,11 +23,7 @@ export default function Planet() {
           <p>This planet has no moons.</p>
         ) : (
           planet.moons.map(({ id, title }) => (
-            <li key={id}>
-              <Link href={`${planetPath}/moons/${convertTitleForPath(title)}`}>
-                {title}
-              </Link>
-            </li>
+            <MoonLink key={id} planetPath={planetPath} title={title} />
           ))
         )}
       </ul>
