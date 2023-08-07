@@ -1,12 +1,16 @@
 import Link from 'next/link';
+import MoonLink from '../moonlink/MoonLink';
+import styles from './MoonList.module.css';
 
-export default function MoonList() {
+export default function MoonList({ planet }) {
   return (
-    <ul>
+    <ul className={styles.MoonList}>
       {planet.moons.map((moon) => (
-        <li key={planet.title + moon}>
-          <Link href={`${planet.path}/${moon}`}>{moon}</Link>
-        </li>
+        <MoonLink
+          key={moon.id}
+          planetPath={planet.title.toLowerCase()}
+          title={moon.title}
+        />
       ))}
     </ul>
   );

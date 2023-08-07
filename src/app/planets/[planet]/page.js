@@ -1,9 +1,9 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import Link from 'next/link';
 import planetData from '../../../../data/planets';
 import convertTitleForPath from '@/utils/convertTitleForPath';
+import MoonList from '@/components/moonlist/MoonList';
 
 export default function Planet() {
   const params = useParams();
@@ -21,13 +21,7 @@ export default function Planet() {
         {planet.moons.length === 0 ? (
           <p>This planet has no moons.</p>
         ) : (
-          planet.moons.map(({ id, title }) => (
-            <li key={id}>
-              <Link href={`${planetPath}/moons/${convertTitleForPath(title)}`}>
-                {title}
-              </Link>
-            </li>
-          ))
+          <MoonList planet={planet} />
         )}
       </ul>
     </div>
