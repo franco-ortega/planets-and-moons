@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import MoonLink from '../moonlink/MoonLink';
+import convertTitleForPath from '@/utils/convertTitleForPath';
 import styles from './MoonList.module.css';
 
 export default function MoonList({ planet }) {
@@ -8,7 +8,7 @@ export default function MoonList({ planet }) {
       {planet.moons.map((moon) => (
         <li key={moon.id}>
           <MoonLink
-            planetPath={planet.title.toLowerCase()}
+            planetPath={convertTitleForPath(planet.title)}
             title={moon.title}
           />
         </li>
