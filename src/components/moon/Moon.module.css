@@ -1,0 +1,28 @@
+.Moon {
+  background: linear-gradient(
+    180deg,
+    hsl(0, 0%, 0%),
+    hsl(0, 0%, 10%),
+    hsl(0, 0%, 20%),
+    hsl(0, 0%, 30%),
+    hsl(0, 0%, 45%),
+    hsl(0, 0%, 55%),
+    hsl(0, 0%, 65%),
+    hsl(0, 0%, 75%)
+  );
+
+  border: 0.15rem solid hsl(0, 2%, 82%);
+  border-radius: 1rem;
+
+  color: hsl(34, 62%, 95%);
+
+  margin-top: 2rem;
+  padding: 1rem;
+  min-height: 50vh;
+
+  text-align: center;
+}
+
+.Moon a {
+  color: hsl(51, 91%, 75%);
+}

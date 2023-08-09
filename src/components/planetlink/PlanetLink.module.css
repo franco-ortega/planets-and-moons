@@ -1,12 +1,12 @@
 .PlanetLink {
-  background-color: hsl(0, 0%, 60%);
-  color: hsl(179, 86%, 62%);
+  background-color: hsl(178, 55%, 40%, 0.5);
+  color: hsl(179, 76%, 70%);
   font-size: 1.5rem;
   width: 10rem;
   aspect-ratio: 1/1;
-  border-radius: 90vh;
-  border: 0;
-  box-shadow: 0 0 2rem 1rem hsl(50, 80%, 50%);
+  border-radius: 100rem;
+  box-shadow: 0 0 2rem 1rem hsl(51, 6%, 77%);
 
-  cursor: pointer;
+  padding-top: 2rem;
+  text-align: center;
 }
