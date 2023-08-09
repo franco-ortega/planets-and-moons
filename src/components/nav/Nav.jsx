@@ -1,9 +1,10 @@
 import navlinks from '../../../data/navlinks';
 import NavLink from '../navlink/NavLink';
+import styles from './Nav.module.css';
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className={styles.Nav}>
       <ul>
         {navlinks.map((navlink) => (
           <NavLink
