@@ -2,7 +2,11 @@
   background-color: hsl(0, 0%, 15%);
   color: hsl(0, 0%, 95%);
 
-  padding-top: 1rem;
+  padding-block: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .Header h1 {
