@@ -22,3 +22,7 @@
 
   text-align: center;
 }
+
+.Moon a {
+  color: hsl(51, 91%, 75%);
+}
