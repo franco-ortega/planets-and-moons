@@ -1,7 +1,7 @@
-export default function Moon({ moon, title }) {
+export default function Moon({ moonTitle, planetTitle }) {
   return (
     <p>
-      {moon} is a moon of {title}.
+      {moonTitle} is a moon of {planetTitle}.
     </p>
   );
 }
