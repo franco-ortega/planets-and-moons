@@ -18,9 +18,5 @@ export default function MoonPage() {
     (moon) => moonPath === convertTitleForPath(moon.title)
   );
 
-  return (
-    <main>
-      <Moon moonTitle={moon.title} planetTitle={planet.title} />
-    </main>
-  );
+  return <Moon moonTitle={moon.title} planetTitle={planet.title} />;
 }
