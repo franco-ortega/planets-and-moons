@@ -1,0 +1,13 @@
+.Nav {
+  margin-inline: auto;
+  padding: 1rem;
+  width: fit-content;
+}
+
+.Nav ul {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
