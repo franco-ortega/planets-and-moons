@@ -5,11 +5,11 @@ import styles from './MoonList.module.css';
 export default function MoonList({ planet }) {
   return (
     <ul className={styles.MoonList}>
-      {planet.moons.map((moon) => (
-        <li key={moon.id}>
+      {planet.moons.map(({ id, title }) => (
+        <li key={id}>
           <MoonLink
             planetPath={convertTitleForPath(planet.title)}
-            title={moon.title}
+            title={title}
           />
         </li>
       ))}
