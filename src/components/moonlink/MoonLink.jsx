@@ -5,7 +5,7 @@ import styles from './MoonLink.module.css';
 export default function MoonLink({ planetPath, title }) {
   return (
     <Link href={`${planetPath}/moons/${convertTitleForPath(title)}`}>
-      <li className={styles.MoonLink}>{title}</li>
+      <div className={styles.MoonLink}>{title}</div>
     </Link>
   );
 }
