@@ -5,6 +5,7 @@ import planets from '../../../../data/planets';
 import convertTitleForPath from '@/utils/convertTitleForPath';
 import MoonList from '@/components/moonlist/MoonList';
 import styles from './page.module.css';
+import Link from 'next/link';
 
 export default function Planet() {
   const params = useParams();
@@ -26,6 +27,9 @@ export default function Planet() {
           <MoonList planet={planet} />
         )}
       </ul>
+      <p className={styles.link}>
+        <Link href={'/planets/'}>Go back to Planets</Link>.
+      </p>
     </main>
   );
 }

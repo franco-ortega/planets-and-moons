@@ -22,3 +22,7 @@
   flex-direction: column;
   align-items: center;
 }
+
+.link {
+  color: hsl(51, 91%, 75%);
+}
