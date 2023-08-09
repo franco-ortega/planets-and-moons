@@ -1,4 +1,12 @@
 .Header {
-  background-color: hsl(0, 0%, 10%);
+  background-color: hsl(0, 0%, 15%);
   color: hsl(0, 0%, 95%);
+
+  padding-top: 1rem;
+}
+
+.Header h1 {
+  margin-inline: auto;
+  width: fit-content;
+  font-weight: 500;
 }
