@@ -4,6 +4,7 @@ import { useParams } from 'next/navigation';
 import planetData from '../../../../data/planets';
 import convertTitleForPath from '@/utils/convertTitleForPath';
 import MoonList from '@/components/moonlist/MoonList';
+import styles from './page.module.css';
 
 export default function Planet() {
   const params = useParams();
@@ -14,7 +15,7 @@ export default function Planet() {
   const planetPath = convertTitleForPath(planet.title);
 
   return (
-    <div>
+    <main className={styles.main}>
       <p>This is planet {planet.title}.</p>
       <p>Info: {planet.info}</p>
       <ul>
@@ -24,6 +25,6 @@ export default function Planet() {
           <MoonList planet={planet} />
         )}
       </ul>
-    </div>
+    </main>
   );
 }
