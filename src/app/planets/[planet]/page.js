@@ -25,7 +25,7 @@ export default function Planet() {
         {moons.length === 0 ? (
           <p>This planet has no moons.</p>
         ) : (
-          <MoonList parentPath={parentPath} planet={planet} />
+          <MoonList moons={moons} parentPath={parentPath} planetTitle={title} />
         )}
       </ul>
       <p className={styles.link}>

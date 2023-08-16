@@ -1,15 +1,16 @@
 import MoonLink from '../moonlink/MoonLink';
 import styles from './MoonList.module.css';
 
-export default function MoonList({ parentPath, planet }) {
+export default function MoonList({ moons, parentPath, planetTitle }) {
   const isMoonsPath = parentPath === '/moons';
 
   return (
     <ul className={styles.MoonList}>
-      {planet.moons.map(({ id, title }) => (
+      {moons.map(({ id, title }) => (
         <li key={id}>
           <MoonLink
-            planetTitle={isMoonsPath ? `planets/${planet.title}` : planet.title}
+            isMoonsPath={isMoonsPath}
+            planetTitle={planetTitle}
             moonTitle={title}
           />
         </li>

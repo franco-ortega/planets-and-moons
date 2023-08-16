@@ -12,7 +12,12 @@ export default function MoonTable() {
     <ul className={styles.MoonTable}>
       {planets.map((planet) => (
         <li key={planet.id}>
-          {planet.title}: <MoonList parentPath={parentPath} planet={planet} />
+          {planet.title}:{' '}
+          <MoonList
+            moons={planet.moons}
+            parentPath={parentPath}
+            planetTitle={planet.title}
+          />
         </li>
       ))}
     </ul>
