@@ -1,14 +1,15 @@
 'use client';
 
-import { useParams } from 'next/navigation';
+import Link from 'next/link';
+import { useParams, usePathname } from 'next/navigation';
 import planets from '../../../../data/planets';
 import convertTitleForPath from '@/utils/convertTitleForPath';
 import MoonList from '@/components/moonlist/MoonList';
 import styles from './page.module.css';
-import Link from 'next/link';
 
 export default function Planet() {
   const params = useParams();
+  const parentPath = usePathname();
 
   const planet = planets.find(
     (planet) => convertTitleForPath(planet.title) === params.planet
@@ -24,7 +25,7 @@ export default function Planet() {
         {moons.length === 0 ? (
           <p>This planet has no moons.</p>
         ) : (
-          <MoonList planet={planet} />
+          <MoonList parentPath={parentPath} planet={planet} />
         )}
       </ul>
       <p className={styles.link}>
