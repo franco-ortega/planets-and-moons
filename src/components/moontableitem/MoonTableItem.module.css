@@ -1,0 +1,9 @@
+.MoonTableItem {
+  border: 1px white solid;
+  text-align: center;
+}
+
+.MoonTableItem h3 {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
