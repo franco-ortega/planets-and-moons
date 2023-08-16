@@ -6,6 +6,7 @@ import planets from '../../../../data/planets';
 import convertTitleForPath from '@/utils/convertTitleForPath';
 import MoonList from '@/components/moonlist/MoonList';
 import styles from './page.module.css';
+import NoMoons from '@/components/nomoons/NoMoons';
 
 export default function Planet() {
   const params = useParams();
@@ -23,7 +24,7 @@ export default function Planet() {
       <p>Info: {info}</p>
       <ul>
         {moons.length === 0 ? (
-          <p>This planet has no moons.</p>
+          <NoMoons />
         ) : (
           <MoonList moons={moons} parentPath={parentPath} planetTitle={title} />
         )}
