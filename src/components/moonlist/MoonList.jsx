@@ -1,15 +1,12 @@
 import MoonLink from '../moonlink/MoonLink';
-import convertTitleForPath from '@/utils/convertTitleForPath';
 import styles from './MoonList.module.css';
 
-export default function MoonList({ planet }) {
-  const planetPath = convertTitleForPath(planet.title);
-
+export default function MoonList({ moons, planetTitle }) {
   return (
     <ul className={styles.MoonList}>
-      {planet.moons.map(({ id, title }) => (
+      {moons.map(({ id, title }) => (
         <li key={id}>
-          <MoonLink planetPath={planetPath} moonTitle={title} />
+          <MoonLink planetTitle={planetTitle} moonTitle={title} />
         </li>
       ))}
     </ul>
